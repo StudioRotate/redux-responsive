@@ -12,13 +12,16 @@ describe('addEventHandlers', function () {
     })
 
 
-    it('calls the dispatch property of the store arg', function () {
+    it('calls the dispatch property of the store arg', function (done) {
         const dispatchSpy = sinon.spy()
 
         addEventHandlers({dispatch: dispatchSpy})
 
-        // should have triggered our dispatch spy exactly once
-        expect(dispatchSpy).to.have.been.calledOnce
+        setTimeout(() => {
+            // should have triggered our dispatch spy exactly once
+            expect(dispatchSpy).to.have.been.calledOnce
+            done()
+        }, 1)
     })
 
 

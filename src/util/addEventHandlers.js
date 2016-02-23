@@ -22,7 +22,7 @@ export default (store, throttleTime) => {
             throttleTime
         )
         // initialize the responsive state
-        throttledHandler()
+        setTimeout(throttledHandler, 0)
         // add the resize event listener
         window.addEventListener('resize', throttledHandler)
     }
