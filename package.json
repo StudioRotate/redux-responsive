@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "test": "gulp test",
-    "prepublish" : "gulp build-production"
+    "prepublish": "gulp build-production"
   },
   "license": "MIT",
   "devDependencies": {
@@ -37,6 +37,8 @@
     "karma-sourcemap-loader": "^0.3.6",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.3.3",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
     "vinyl-named": "^1.1.0",
     "webpack": "^1.12.2",
     "webpack-stream": "^2.1.1"
